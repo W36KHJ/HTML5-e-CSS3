@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+      color: brown;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:visited { /* mostra se o link já foi visitado */
+      color: darkred;
+    }
+
+    a:hover { /* serve para alterar a cor ou configuração da fonte ao passa o mouse em cima */
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:active { /* serve para alterar a cor ou configuração da fonte ao clicar */
+      color: blueviolet;
+    }
+    .especial::before {
+      content: '\00BB';
+    }
+    .especial::after{
+      content: '\00AB';
+    }
+    .especial {
+      background-color: yellowgreen;
+    }
+
+    .especial02::before {
+      content: '\2260';
+    }
+    .especial02::after{
+      content: '\2260';
+    }
+    
+    /* Seletores Personalizados
+     # = id
+     . = class
+     : = pseudo-class
+    :: = pseudo-element
+     > = clildren
+    */
+
+  </style>
+</head>
+<body>
+  <H1>Personalizando Links</H1>
+  <ul>
+    <li><a href="https://fogodechao.activehosted.com/app/campaigns" target="_blank" target="_blank" class="especial02">Link 01</a></li>
+    <li><a href="https://rai.bitrix24.com.br/company/personal/user/1127/tasks/" target="_blank" class="especial">Link 02</a></li>
+    <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" target="_blank" class="especial02">Link 03</a></li>
+    <li><a href="https://adidasdtc.rai.com.br/Login" target="_blank" class="especial">Link 04</a></li>
+  </ul>
+  
+</body>
+</html>
