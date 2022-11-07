@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Notas</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+      border-collapse: collapse;
+      width: 800px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    caption{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2em;
+      color: white;
+      background-color: black;
+    }
+    .cor {
+      background-color: grey;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+  <table>
+    <caption>Media de Notas</caption>
+    <tbody>
+      <tr class="cor">
+        <th rowspan="2">Área</th>
+        <th rowspan="2">Disciplinas</th>
+        <th colspan="2">Notas</th>
+        <th rowspan="2">Média</th>
+      </tr>
+      <tr class="cor">
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+      </tr>
+      <tr>
+        <th rowspan="4">Extras</th>
+        <td>Matematica</td>
+        <td>9.0</td>
+        <td>9.5</td>
+        <td>8,9</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>9.0</td>
+        <td>9.5</td>
+        <td>8,9</td>
+      </tr>
+      <tr>
+        <td>Quimica</td>
+        <td>9.0</td>
+        <td>9.5</td>
+        <td>8,9</td>
+      </tr>
+      <tr>
+        <td>Biologia</td>
+        <td>9.0</td>
+        <td>9.5</td>
+        <td>8,9</td>
+      </tr>
+      <tr class="cor">
+        <th colspan="4">Média de Exatas</th>
+        <th>9,8</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Humanas</th>
+        <td>Historia</td>
+        <td>7,5</td>
+        <td>6,5</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <td>Geografia</td>
+        <td>9.0</td>
+        <td>9.5</td>
+        <td>8,9</td>
+      </tr>
+      <tr class="cor">
+        <th colspan="4">Média de Humanas</th>
+        <th>7,5</th>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
